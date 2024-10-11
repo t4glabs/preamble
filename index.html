@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Asset</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+            width: 48%;
+            text-align: center;
+        }
+
+        .buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .buttons {
+                flex-direction: column;
+            }
+
+            .buttons a {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="your-asset-image.png" alt="Asset Image">
+        <h1>Want to get your own image?</h1>
+        <div class="buttons">
+            <a href="your-asset-file.pdf" download>Download PDF Format</a>
+            <a href="your-asset-file.svg" download>Download SVG Format</a>
+        </div>
+    </div>
+
+</body>
+</html>
